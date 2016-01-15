@@ -43,6 +43,7 @@
     //profile
     MTProfileViewController *pfVc = [[MTProfileViewController alloc] init];
     [self addChildViewController:pfVc image:@"tabbar_profile" selectedImage:@"tabbar_profile_selected" title:@"我"];
+    self.tabBar.backgroundColor = [UIColor blueColor];
     
     //plusButton
     MTTabBar *tabBar = [[MTTabBar alloc] init];
@@ -72,7 +73,8 @@
     childController.tabBarItem.image = [UIImage imageNamed:imageName];
 
     MTNavigationViewController *nav  = [[MTNavigationViewController alloc] initWithRootViewController:childController];
-    
+
+
     [self addChildViewController:nav];
 }
 

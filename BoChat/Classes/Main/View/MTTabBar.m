@@ -33,6 +33,7 @@
         [plusButton addTarget:self action:@selector(clickPlus) forControlEvents:UIControlEventTouchUpInside];
         [self addSubview:plusButton];
         self.plusButton = plusButton;
+        self.backgroundColor = [UIColor redColor];
     }
     return self;
 }

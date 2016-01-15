@@ -28,8 +28,8 @@
     self.window = [[UIWindow alloc] init];
     self.window.frame = [UIScreen mainScreen].bounds;
     
-//    self.window.rootViewController = [[MTTabBarController alloc] init];
-    self.window.rootViewController = [[MTNewFeatureViewController alloc] init];
+    self.window.rootViewController = [[MTTabBarController alloc] init];
+//    self.window.rootViewController = [[MTNewFeatureViewController alloc] init];
     [self.window makeKeyAndVisible];
     return YES;
 }
